@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LionLobs - Agência de Marketing Digital Premium. Edição de vídeos, gerenciamento de redes sociais, identidade visual, tráfego pago e muito mais.">
+    <title>LionLobs — Agência de Marketing Digital Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== MODAL DE LOGIN ===== -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-modal">
+            <button class="login-close" id="loginClose">✕</button>
+            <div class="login-logo">
+                <img src="logo.png" alt="LionLobs">
+            </div>
+            <h2>Área do Cliente</h2>
+            <p>Acesse seu painel de resultados e relatórios</p>
+            <div class="login-content">
+                <p class="login-subtitle">Para acessar sua área de cliente e receber suporte personalizado, entre em contato conosco via WhatsApp:</p>
+                <a href="https://wa.me/5548984380321?text=Olá%20LionLobs!%20Gostaria%20de%20acessar%20minha%20área%20de%20cliente%20e%20conhecer%20mais%20sobre%20meus%20projetos." target="_blank" class="btn btn-primary btn-full" style="margin-top: 24px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.2-5.044 5.91-5.044 9.827 0 1.128.191 2.235.56 3.29l.744 2.468a.5.5 0 00.61.364l2.25-.375a9.86 9.86 0 004.991 1.247h.004c5.318 0 9.75-4.353 9.75-9.699 0-2.6-.564-5.045-1.637-7.39-1.058-2.289-2.523-4.323-4.323-5.793-1.73-1.41-3.902-2.247-6.26-2.247z"/></svg>
+                    Acessar via WhatsApp
+                </a>
+                <p class="login-register" style="margin-top: 20px; text-align: center;">Ou envie um e-mail para <a href="mailto:lionlobs@gmail.com" style="color: #cea973; text-decoration: underline;">lionlobs@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <img src="logo.png" alt="LionLobs" class="logo-img">
+                    <img src="logo.png" alt="LionLobs" class="logo-img logo-vertical">
+                </a>
+                <nav class="nav">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li><a href="#pacotes-video" class="nav-link">Pacotes</a></li>
+                        <li><a href="#gerenciamento" class="nav-link">Redes Sociais</a></li>
+                        <li><a href="#resultados" class="nav-link">Resultados</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                        <li><button class="btn-login" id="btnLogin">Área do Cliente</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="lion_wolf_hero_bg.png" alt="" class="hero-bg-img">
+            <div class="hero-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in-left">
+                    <span class="hero-badge">Agência de Marketing Digital Premium</span>
+                    <h1 class="hero-title">
+                        Sua marca no<br>
+                        <span class="hero-title-gold">próximo nível</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Edição profissional de vídeos, gestão de redes sociais, identidade visual e estratégias que transformam seguidores em clientes.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#pacotes-video" class="btn btn-primary">
+                            Ver Pacotes
+
+                        </a>
+                        <a href="#contato" class="btn btn-outline">Falar com Especialista</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">800+</span>
+                            <span class="hero-stat-label">Vídeos Editados</span>
+                        </div>
+                        <div class="hero-stat-sep"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">150+</span>
+                            <span class="hero-stat-label">Clientes Ativos</span>
+                        </div>
+                        <div class="hero-stat-sep"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">98%</span>
+                            <span class="hero-stat-label">Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== SERVIÇOS PRINCIPAIS ===== -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">O que fazemos</span>
+                <h2>Soluções Completas para sua Marca</h2>
+                <p>Do vídeo à estratégia — tudo que você precisa para dominar o digital</p>
+            </div>
+            <div class="services-grid">
+
+                <div class="service-card fade-in">
+                    <div class="service-img-wrap">
+                        <img src="mulher-consultoria.jpg" alt="Consultoria" class="service-img">
+                        <div class="service-img-overlay"></div>
+                        <span class="service-badge">01</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Consultoria & Neuromarketing</h3>
+                        <p>Gestão empresarial, análise de dados, posicionamento de marca e estratégias baseadas em neuromarketing.</p>
+                        <a href="#outros-servicos" class="service-link">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-img-wrap">
+                        <img src="mulher-identidade-visual.jpg" alt="Identidade Visual" class="service-img">
+                        <div class="service-img-overlay"></div>
+                        <span class="service-badge">02</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Identidade Visual & Branding</h3>
+                        <p>Manual de marca, ID visual completo, pacote de logomarca e materiais que comunicam a essência do seu negócio.</p>
+                        <a href="#branding" class="service-link">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-img-wrap">
+                        <img src="mulher-edicao-video.jpg" alt="Edição de Vídeos" class="service-img">
+                        <div class="service-img-overlay"></div>
+                        <span class="service-badge">03</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Edição de Vídeos</h3>
+                        <p>Vídeos profissionais com roteiro pronto, edição cinematográfica e legendas otimizadas para cada plataforma.</p>
+                        <a href="#pacotes-video" class="service-link">Ver pacotes</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-img-wrap">
+                        <img src="mulher-redes-sociais.jpg" alt="Gestão de Redes Sociais" class="service-img">
+                        <div class="service-img-overlay"></div>
+                        <span class="service-badge">04</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Gestão de Redes Sociais</h3>
+                        <p>Gerenciamento completo com design, vídeos, legendas, hashtags estratégicas e suporte diário no WhatsApp.</p>
+                        <a href="#gerenciamento" class="service-link">Ver planos</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-img-wrap">
+                        <img src="landing-page.jpg" alt="Landing Page e Sites" class="service-img">
+                        <div class="service-img-overlay"></div>
+                        <span class="service-badge">05</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Landing Page & Sites</h3>
+                        <p>Sites de alto nível com área de login, landing pages de alta conversão e experiências digitais premium.</p>
+                        <a href="#outros-servicos" class="service-link">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-img-wrap">
+                        <img src="trafego-pago.jpg" alt="Tráfego Pago" class="service-img">
+                        <div class="service-img-overlay"></div>
+                        <span class="service-badge">06</span>
+                    </div>
+                    <div class="service-body">
+                        <h3>Tráfego Pago</h3>
+                        <p>Campanhas estratégicas no Google, Meta e outras plataformas com foco em ROI e resultados mensuráveis.</p>
+                        <a href="#outros-servicos" class="service-link">Saiba mais</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PACOTES DE EDIÇÃO DE VÍDEO ===== -->
+    <section id="pacotes-video" class="pricing-section dark-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Edição de Vídeos</span>
+                <h2>Pacotes de Edição Profissional</h2>
+                <p>Todos os vídeos incluem roteiro pronto, edição profissional e legendas</p>
+            </div>
+            <div class="pricing-grid">
+
+                <div class="pricing-card fade-in">
+                    <div class="pricing-icon">●</div>
+                    <h3>Starter</h3>
+                    <div class="pricing-qty"><span>1</span> vídeo</div>
+                    <ul class="pricing-features">
+                        <li>Roteiro completo incluso</li>
+                        <li>Edição profissional</li>
+                        <li>Legendas animadas</li>
+                        <li>Entrega em 48h</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-outline-gold">Solicitar</a>
+                </div>
+
+                <div class="pricing-card fade-in">
+                    <div class="pricing-icon">●</div>
+                    <h3>Pack 4</h3>
+                    <div class="pricing-qty"><span>4</span> vídeos</div>
+                    <ul class="pricing-features">
+                        <li>Roteiro completo incluso</li>
+                        <li>Edição profissional</li>
+                        <li>Legendas animadas</li>
+                        <li>Entrega em 72h</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-outline-gold">Solicitar</a>
+                </div>
+
+                <div class="pricing-card pricing-featured fade-in">
+                    <div class="pricing-badge-top">Mais Popular</div>
+                    <div class="pricing-icon">●</div>
+                    <h3>Mensal 4</h3>
+                    <div class="pricing-qty"><span>4</span> vídeos/mês</div>
+                    <ul class="pricing-features">
+                        <li>Roteiro completo incluso</li>
+                        <li>Edição profissional</li>
+                        <li>Legendas animadas</li>
+                        <li>1 revisão por vídeo</li>
+                        <li>Suporte WhatsApp</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-primary">Contratar</a>
+                </div>
+
+                <div class="pricing-card fade-in">
+                    <div class="pricing-icon">●</div>
+                    <h3>Mensal 8</h3>
+                    <div class="pricing-qty"><span>8</span> vídeos/mês</div>
+                    <ul class="pricing-features">
+                        <li>Roteiro completo incluso</li>
+                        <li>Edição profissional</li>
+                        <li>Legendas animadas</li>
+                        <li>2 revisões por vídeo</li>
+                        <li>Suporte WhatsApp</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-outline-gold">Contratar</a>
+                </div>
+
+                <div class="pricing-card fade-in">
+                    <div class="pricing-icon">●</div>
+                    <h3>Mensal 12</h3>
+                    <div class="pricing-qty"><span>12</span> vídeos/mês</div>
+                    <ul class="pricing-features">
+                        <li>Roteiro completo incluso</li>
+                        <li>Edição profissional</li>
+                        <li>Legendas animadas</li>
+                        <li>Revisões ilimitadas</li>
+                        <li>Suporte prioritário</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-outline-gold">Contratar</a>
+                </div>
+
+                <div class="pricing-card pricing-premium fade-in">
+                    <div class="pricing-badge-top">Premium</div>
+                    <div class="pricing-icon">●</div>
+                    <h3>Mensal 16</h3>
+                    <div class="pricing-qty"><span>16</span> vídeos/mês</div>
+                    <ul class="pricing-features">
+                        <li>Roteiro completo incluso</li>
+                        <li>Edição profissional</li>
+                        <li>Legendas animadas</li>
+                        <li>Revisões ilimitadas</li>
+                        <li>Gestor dedicado</li>
+                        <li>Relatório mensal</li>
+                    </ul>
+                    <a href="#contato" class="btn btn-primary">Contratar</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GERENCIAMENTO DE REDES SOCIAIS ===== -->
+    <section id="gerenciamento" class="social-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Gestão Completa</span>
+                <h2>Gerenciamento de Redes Sociais</h2>
+                <p>Edição + Design + Legendas — tudo incluso em cada plano</p>
+            </div>
+
+            <!-- O QUE ESTÁ INCLUSO -->
+            <div class="includes-box fade-in">
+                <h3>✦ O que está incluso em todos os planos:</h3>
+                <div class="includes-grid">
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Roteiros profissionais</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Legendas completas</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Hashtags estratégicas</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Postagem no melhor horário</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Ajuste de capa</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Envio pelo Google Drive</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Suporte diário no WhatsApp</span>
+                    </div>
+                    <div class="include-item">
+                        <span class="include-icon">✔</span>
+                        <span>Designs e artes personalizados</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLANOS -->
+            <div class="social-plans-grid">
+
+                <div class="social-plan fade-in">
+                    <div class="plan-header">
+                        <span class="plan-number">01</span>
+                        <h3>Plano Essencial</h3>
+                    </div>
+                    <div class="plan-content">
+                        <div class="plan-img-wrap">
+                            <img src="gestao-redes.jpg" alt="Plano Essencial" class="plan-img">
+                            <div class="plan-img-overlay"></div>
+                        </div>
+                        <div class="plan-details">
+                            <div class="plan-qty">
+                                <div class="qty-item">
+                                    <span class="qty-num">1</span>
+                                    <span class="qty-label">vídeo/semana</span>
+                                </div>
+                                <div class="qty-sep">+</div>
+                                <div class="qty-item">
+                                    <span class="qty-num">1</span>
+                                    <span class="qty-label">arte/semana</span>
+                                </div>
+                            </div>
+                            <a href="#contato" class="btn btn-outline-gold btn-full">Contratar Plano 1</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-plan fade-in">
+                    <div class="plan-header">
+                        <span class="plan-number">02</span>
+                        <h3>Plano Crescimento</h3>
+                    </div>
+                    <div class="plan-content">
+                        <div class="plan-img-wrap">
+                            <img src="gestao-redes.jpg" alt="Plano Crescimento" class="plan-img">
+                            <div class="plan-img-overlay"></div>
+                        </div>
+                        <div class="plan-details">
+                            <div class="plan-qty">
+                                <div class="qty-item">
+                                    <span class="qty-num">1</span>
+                                    <span class="qty-label">vídeo/semana</span>
+                                </div>
+                                <div class="qty-sep">+</div>
+                                <div class="qty-item">
+                                    <span class="qty-num">2</span>
+                                    <span class="qty-label">artes/semana</span>
+                                </div>
+                            </div>
+                            <a href="#contato" class="btn btn-outline-gold btn-full">Contratar Plano 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-plan social-plan-featured fade-in">
+                    <div class="plan-header">
+                        <span class="plan-number">03</span>
+                        <h3>Plano Aceleração</h3>
+                        <span class="plan-tag">Recomendado</span>
+                    </div>
+                    <div class="plan-content">
+                        <div class="plan-img-wrap">
+                            <img src="gestao-redes.jpg" alt="Plano Aceleração" class="plan-img">
+                            <div class="plan-img-overlay"></div>
+                        </div>
+                        <div class="plan-details">
+                            <div class="plan-qty">
+                                <div class="qty-item">
+                                    <span class="qty-num">2</span>
+                                    <span class="qty-label">vídeos/semana</span>
+                                </div>
+                                <div class="qty-sep">+</div>
+                                <div class="qty-item">
+                                    <span class="qty-num">1</span>
+                                    <span class="qty-label">arte/semana</span>
+                                </div>
+                            </div>
+                            <a href="#contato" class="btn btn-primary btn-full">Contratar Plano 3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-plan fade-in">
+                    <div class="plan-header">
+                        <span class="plan-number">04</span>
+                        <h3>Plano Dominância</h3>
+                    </div>
+                    <div class="plan-content">
+                        <div class="plan-img-wrap">
+                            <img src="gestao-redes.jpg" alt="Plano Dominância" class="plan-img">
+                            <div class="plan-img-overlay"></div>
+                        </div>
+                        <div class="plan-details">
+                            <div class="plan-qty">
+                                <div class="qty-item">
+                                    <span class="qty-num">3</span>
+                                    <span class="qty-label">vídeos/semana</span>
+                                </div>
+                                <div class="qty-sep">+</div>
+                                <div class="qty-item">
+                                    <span class="qty-num">1</span>
+                                    <span class="qty-label">arte/semana</span>
+                                </div>
+                            </div>
+                            <a href="#contato" class="btn btn-outline-gold btn-full">Contratar Plano 4</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BRANDING & IDENTIDADE VISUAL ===== -->
+    <section id="branding" class="branding-section dark-section">
+        <div class="container">
+            <div class="branding-grid">
+                <div class="branding-content fade-in-left">
+                    <span class="section-tag">Identidade Visual</span>
+                    <h2>Sua Marca com Personalidade e Autoridade</h2>
+                    <p>Criamos identidades visuais que comunicam a essência do seu negócio e geram reconhecimento instantâneo no mercado.</p>
+                    <div class="branding-services">
+                        <div class="branding-item">
+                            <div class="branding-item-icon">
+                                <img src="icon_manual_marca.png" alt="Manual de Marca">
+                            </div>
+                            <div>
+                                <h4>Manual de Marca</h4>
+                                <p>Guia completo com regras de uso, tom de voz e aplicações da sua marca</p>
+                            </div>
+                        </div>
+                        <div class="branding-item">
+                            <div class="branding-item-icon">
+                                <img src="icon_identidade_visual.png" alt="Identidade Visual">
+                            </div>
+                            <div>
+                                <h4>Identidade Visual Completa</h4>
+                                <p>Paleta de cores, tipografia, ícones e elementos visuais da marca</p>
+                            </div>
+                        </div>
+                        <div class="branding-item">
+                            <div class="branding-item-icon">
+                                <img src="icon_logomarca.png" alt="Pacote Logomarca">
+                            </div>
+                            <div>
+                                <h4>Pacote Logomarca</h4>
+                                <p>Logo em todas as versões, formatos e variações de cor necessárias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contato" class="btn btn-primary">Quero minha Identidade Visual</a>
+                </div>
+                <div class="branding-image fade-in-right">
+                    <div class="branding-img-wrap">
+                        <img src="mulher-identidade-visual.jpg" alt="Identidade Visual" class="branding-img">
+                        <div class="branding-img-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUTROS SERVIÇOS ===== -->
+    <section id="outros-servicos" class="other-services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Mais Soluções</span>
+                <h2>Ecossistema Digital Completo</h2>
+                <p>Tudo que sua empresa precisa para crescer no ambiente digital</p>
+            </div>
+            <div class="other-grid">
+
+                <div class="other-card fade-in">
+                    <div class="other-img-wrap">
+                        <img src="landing-page.jpg" alt="Landing Page" class="other-img">
+                        <div class="other-img-overlay"></div>
+                    </div>
+                    <div class="other-body">
+                        <span class="other-tag">Web</span>
+                        <h3>Landing Page & Sites Premium</h3>
+                        <p>Sites de alto nível com área de login, dashboard do cliente e experiência de usuário premium que converte visitantes em clientes.</p>
+                        <ul class="other-list">
+                            <li>Design exclusivo e responsivo</li>
+                            <li>Área de login para clientes</li>
+                            <li>Integração com WhatsApp</li>
+                            <li>Otimizado para conversão</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-outline-gold">Solicitar Orçamento</a>
+                    </div>
+                </div>
+
+                <div class="other-card fade-in">
+                    <div class="other-img-wrap">
+                        <img src="trafego-pago.jpg" alt="Tráfego Pago" class="other-img">
+                        <div class="other-img-overlay"></div>
+                    </div>
+                    <div class="other-body">
+                        <span class="other-tag">Performance</span>
+                        <h3>Tráfego Pago</h3>
+                        <p>Campanhas estratégicas no Google Ads, Meta Ads e outras plataformas com foco em ROI máximo e resultados mensuráveis.</p>
+                        <ul class="other-list">
+                            <li>Google Ads & Meta Ads</li>
+                            <li>Remarketing avançado</li>
+                            <li>Otimização de conversão</li>
+                            <li>Relatórios detalhados</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-outline-gold">Solicitar Orçamento</a>
+                    </div>
+                </div>
+
+                <div class="other-card fade-in">
+                    <div class="other-img-wrap">
+                        <img src="analise-dados.jpg" alt="Análise de Dados" class="other-img">
+                        <div class="other-img-overlay"></div>
+                    </div>
+                    <div class="other-body">
+                        <span class="other-tag">Dados</span>
+                        <h3>Análise de Dados & Posicionamento</h3>
+                        <p>Análise profunda do seu mercado, concorrência e público para criar estratégias de posicionamento que geram autoridade.</p>
+                        <ul class="other-list">
+                            <li>Análise de métricas</li>
+                            <li>Posicionamento de marca</li>
+                            <li>Relatórios customizados</li>
+                            <li>Dashboards em tempo real</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-outline-gold">Solicitar Orçamento</a>
+                    </div>
+                </div>
+
+                <div class="other-card fade-in">
+                    <div class="other-img-wrap">
+                        <img src="consultoria.jpg" alt="Consultoria" class="other-img">
+                        <div class="other-img-overlay"></div>
+                    </div>
+                    <div class="other-body">
+                        <span class="other-tag">Estratégia</span>
+                        <h3>Consultoria & Neuromarketing</h3>
+                        <p>Consultoria em gestão empresarial e neuromarketing para entender o comportamento do consumidor e criar estratégias irresistíveis.</p>
+                        <ul class="other-list">
+                            <li>Gestão empresarial</li>
+                            <li>Neuromarketing aplicado</li>
+                            <li>Comportamento do consumidor</li>
+                            <li>Estratégia de crescimento</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-outline-gold">Solicitar Orçamento</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESULTADOS / NÚMEROS ===== -->
+    <section id="resultados" class="results-section dark-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Nossos Números</span>
+                <h2>Resultados que Falam por Si</h2>
+                <p>Dados reais de clientes que transformaram suas marcas com a LionLobs</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card fade-in">
+                    <div class="result-num" data-target="800">0</div>
+                    <div class="result-plus">+</div>
+                    <p>Trabalhos finalizados</p>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-num" data-target="150">0</div>
+                    <div class="result-plus">+</div>
+                    <p>Clientes Ativos</p>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-num" data-target="98">0</div>
+                    <div class="result-plus">%</div>
+                    <p>Taxa de Satisfação</p>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-num" data-target="300">0</div>
+                    <div class="result-plus">%</div>
+                    <p>Crescimento Médio</p>
+                </div>
+            </div>
+            <div class="results-cta fade-in">
+                <p>Pronto para ser o próximo caso de sucesso?</p>
+                <a href="#contato" class="btn btn-primary btn-large">Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Depoimentos</span>
+                <h2>O que Nossos Clientes Dizem</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"A LionLobs transformou meu canal. Os vídeos ficaram profissionais demais, com roteiro incrível e edição cinematográfica. Meu engajamento triplicou em 2 meses!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-av">MR</div>
+                        <div>
+                            <strong>Marina Rodrigues</strong>
+                            <span>Criadora de Conteúdo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"O gerenciamento de redes sociais da LionLobs é impecável. Suporte diário, conteúdo de qualidade e minha marca ficou muito mais profissional. Recomendo demais!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-av">CP</div>
+                        <div>
+                            <strong>Carlos Pereira</strong>
+                            <span>Empresário, Setor de Saúde</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"A identidade visual que a LionLobs criou para minha empresa é simplesmente perfeita. O manual de marca é profissional e minha empresa ganhou muito mais credibilidade."</p>
+                    <div class="testimonial-author">
+                        <div class="author-av">FS</div>
+                        <div>
+                            <strong>Fernanda Santos</strong>
+                            <span>CEO, Boutique de Moda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in-left">
+                    <span class="section-tag">Vamos Conversar</span>
+                    <h2>Pronto para Transformar sua Marca?</h2>
+                    <p>Entre em contato e descubra qual solução é ideal para o seu negócio. Resposta em até 2 horas!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">●</div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <a href="https://wa.me/5548984380321" target="_blank">(48) 98438-0321</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">●</div>
+                            <div>
+                                <strong>E-mail</strong>
+                                <a href="mailto:lionlobs@gmail.com">lionlobs@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">●</div>
+                            <div>
+                                <strong>Localização</strong>
+                                <span> Brasil</span>
+                            </div>
+                        </div> 
+                        <div class="contact-item">
+                            <div class="contact-item-icon">●</div>
+                            <div>
+                                <strong>Atendimento</strong>
+                                <span>Seg–Sex: 9h às 18h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.instagram.com/lionlobs?igsh=MWlwZmZzeWpzY2F1cQ%3D%3D&utm_source=qr" class="social-btn" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                       
+                        <a href="https://wa.me/48985380321" class="social-btn" aria-label="Whatsapp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap fade-in-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nome Completo</label>
+                                <input type="text" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp</label>
+                                <input type="tel" placeholder="(11) 99999-9999" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Serviço de Interesse</label>
+                            <select required>
+                                <option value="">Selecione um serviço</option>
+                                <option>Edição de Vídeos — 1 vídeo</option>
+                                <option>Edição de Vídeos — Pack 4</option>
+                                <option>Edição de Vídeos — Mensal 4/mês</option>
+                                <option>Edição de Vídeos — Mensal 8/mês</option>
+                                <option>Edição de Vídeos — Mensal 12/mês</option>
+                                <option>Edição de Vídeos — Mensal 16/mês</option>
+                                <option>Gerenciamento — Plano 1</option>
+                                <option>Gerenciamento — Plano 2</option>
+                                <option>Gerenciamento — Plano 3</option>
+                                <option>Gerenciamento — Plano 4</option>
+                                <option>Landing Page / Site</option>
+                                <option>Manual de Marca / ID Visual</option>
+                                <option>Pacote Logomarca</option>
+                                <option>Tráfego Pago</option>
+                                <option>Consultoria & Neuromarketing</option>
+                                <option>Análise de Dados & Posicionamento</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea placeholder="Conte um pouco sobre seu projeto..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Enviar Mensagem</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq dark-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Dúvidas</span>
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-q">
+                        <span>Como funciona a entrega dos vídeos editados?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Após você enviar o material bruto, nossa equipe cria o roteiro, faz a edição profissional com legendas e envia pelo Google Drive no prazo combinado. Você recebe notificação pelo WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-q">
+                        <span>Qual o prazo de entrega dos vídeos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>O prazo varia de 24h a 72h dependendo do pacote contratado. Nos planos mensais, mantemos um cronograma semanal para garantir consistência nas publicações.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-q">
+                        <span>O gerenciamento inclui postagem nas redes?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Sim! Nos planos de gerenciamento, realizamos a postagem no melhor horário estratégico para maximizar o alcance e engajamento do seu conteúdo.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-q">
+                        <span>Posso solicitar revisões nos vídeos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Sim! Dependendo do plano, você tem direito a 1, 2 ou revisões ilimitadas. Nos planos premium, trabalhamos até você ficar 100% satisfeito.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-q">
+                        <span>Como funciona o suporte diário no WhatsApp?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Você terá acesso direto ao nosso time pelo WhatsApp para tirar dúvidas, solicitar ajustes, enviar materiais e acompanhar o andamento dos seus projetos em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="LionLobs" class="footer-logo">
+                    <p>Agência de Marketing Digital Premium especializada em edição de vídeos, gestão de redes sociais e estratégias que transformam marcas.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/lionlobs?igsh=MWlwZmZzeWpzY2F1cQ%3D%3D&utm_source=qr" class="social-btn" aria-label="Instagram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                       
+                        <a href="https://wa.me/48985380321" class="social-btn" aria-label="Whatsapp">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#pacotes-video">Edição de Vídeos</a></li>
+                        <li><a href="#gerenciamento">Gestão de Redes</a></li>
+                        <li><a href="#branding">Identidade Visual</a></li>
+                        <li><a href="#outros-servicos">Landing Page</a></li>
+                        <li><a href="#outros-servicos">Tráfego Pago</a></li>
+                        <li><a href="#outros-servicos">Consultoria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#" id="footerLogin">Área do Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Receba dicas de marketing digital e tendências de conteúdo</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button>→</button>
+                    </div>
+                    <div class="footer-badge">
+                        <span>🔒</span>
+                        <span>Seus dados estão seguros</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 LionLobs — Agência de Marketing Digital. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CHATBOT IA FLUTUANTE ===== -->
+    <div class="ai-chatbot" id="aiChatbot">
+        <div class="ai-chatbot-header">
+            <div class="ai-chatbot-title">
+                <span class="ai-icon">🤖</span>
+                <div>
+                    <h4>LionLobs IA</h4>
+                    <p>Online</p>
+                </div>
+            </div>
+            <button class="ai-close" id="aiClose">✕</button>
+        </div>
+        <div class="ai-chatbot-messages" id="aiMessages">
+            <div class="ai-message ai-message-bot">
+                <div class="ai-message-content">
+                    <p>Olá! 👋 Sou a assistente de IA da LionLobs. Como posso ajudá-lo?</p>
+                </div>
+            </div>
+        </div>
+        <div class="ai-chatbot-quick-replies" id="aiQuickReplies">
+            <button class="ai-quick-btn" data-question="Quais são seus serviços?">Serviços</button>
+            <button class="ai-quick-btn" data-question="Qual é o valor dos pacotes?">Preços</button>
+            <button class="ai-quick-btn" data-question="Como funciona o suporte?">Suporte</button>
+            <button class="ai-quick-btn" data-question="Falar com um especialista">Especialista</button>
+        </div>
+        <div class="ai-chatbot-input">
+            <input type="text" id="aiInput" placeholder="Digite sua mensagem..." maxlength="200">
+            <button id="aiSend">→</button>
+        </div>
+    </div>
+
+    <!-- ===== BOTÃO FLUTUANTE ===== -->
+    <button class="ai-float-btn" id="aiFloatBtn" title="Abrir chat com IA">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12h-8v-2h8v2zm0-4h-8V8h8v2z"/></svg>
+        <span class="ai-float-badge">IA</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

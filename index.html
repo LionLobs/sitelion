@@ -10,6 +10,26 @@
 </head>
 <body>
 
+    <!-- ===== MODAL DE LOGIN ===== -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-modal">
+            <button class="login-close" id="loginClose">✕</button>
+            <div class="login-logo">
+                <img src="logo.png" alt="LionLobs">
+            </div>
+            <h2>Área do Cliente</h2>
+            <p>Acesse seu painel de resultados e relatórios</p>
+            <div class="login-content">
+                <p class="login-subtitle">Para acessar sua área de cliente e receber suporte personalizado, entre em contato conosco via WhatsApp:</p>
+                <a href="https://wa.me/5548984380321?text=Olá%20LionLobs!%20Gostaria%20de%20acessar%20minha%20área%20de%20cliente%20e%20conhecer%20mais%20sobre%20meus%20projetos." target="_blank" class="btn btn-primary btn-full" style="margin-top: 24px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.2-5.044 5.91-5.044 9.827 0 1.128.191 2.235.56 3.29l.744 2.468a.5.5 0 00.61.364l2.25-.375a9.86 9.86 0 004.991 1.247h.004c5.318 0 9.75-4.353 9.75-9.699 0-2.6-.564-5.045-1.637-7.39-1.058-2.289-2.523-4.323-4.323-5.793-1.73-1.41-3.902-2.247-6.26-2.247z"/></svg>
+                    Acessar via WhatsApp
+                </a>
+                <p class="login-register" style="margin-top: 20px; text-align: center;">Ou envie um e-mail para <a href="mailto:lionlobs@gmail.com" style="color: #cea973; text-decoration: underline;">lionlobs@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
     <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="container">
@@ -711,53 +731,53 @@
                     </div>
                 </div>
                 <div class="contact-form-wrap fade-in-right">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Nome Completo</label>
-                                <input type="text" placeholder="Seu nome" required>
-                            </div>
-                            <div class="form-group">
-                                <label>WhatsApp</label>
-                                <input type="tel" placeholder="(11) 99999-9999" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>E-mail</label>
-                            <input type="email" placeholder="seu@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Serviço de Interesse</label>
-                            <select required>
-                                <option value="">Selecione um serviço</option>
-                                <option>Edição de Vídeos — 1 vídeo</option>
-                                <option>Edição de Vídeos — Pack 4</option>
-                                <option>Edição de Vídeos — Mensal 4/mês</option>
-                                <option>Edição de Vídeos — Mensal 8/mês</option>
-                                <option>Edição de Vídeos — Mensal 12/mês</option>
-                                <option>Edição de Vídeos — Mensal 16/mês</option>
-                                <option>Gerenciamento — Plano 1</option>
-                                <option>Gerenciamento — Plano 2</option>
-                                <option>Gerenciamento — Plano 3</option>
-                                <option>Gerenciamento — Plano 4</option>
-                                <option>Landing Page / Site</option>
-                                <option>Manual de Marca / ID Visual</option>
-                                <option>Pacote Logomarca</option>
-                                <option>Tráfego Pago</option>
-                                <option>Consultoria & Neuromarketing</option>
-                                <option>Análise de Dados & Posicionamento</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Mensagem</label>
-                            <textarea placeholder="Conte um pouco sobre seu projeto..." rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span>Enviar Mensagem</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
-                        </button>
-                    </form>
-                </div>
+    <form class="contact-form" id="contactForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <label>WhatsApp</label>
+                <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="form-group">
+            <label>Serviço de Interesse</label>
+            <select id="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option>Edição de Vídeos — 1 vídeo</option>
+                <option>Edição de Vídeos — Pack 4</option>
+                <option>Edição de Vídeos — Mensal 4/mês</option>
+                <option>Edição de Vídeos — Mensal 8/mês</option>
+                <option>Edição de Vídeos — Mensal 12/mês</option>
+                <option>Edição de Vídeos — Mensal 16/mês</option>
+                <option>Gerenciamento — Plano 1</option>
+                <option>Gerenciamento — Plano 2</option>
+                <option>Gerenciamento — Plano 3</option>
+                <option>Gerenciamento — Plano 4</option>
+                <option>Landing Page / Site</option>
+                <option>Manual de Marca / ID Visual</option>
+                <option>Pacote Logomarca</option>
+                <option>Tráfego Pago</option>
+                <option>Consultoria & Neuromarketing</option>
+                <option>Análise de Dados & Posicionamento</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Mensagem</label>
+            <textarea id="mensagem" placeholder="Conte um pouco sobre seu projeto..." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+            <span>Enviar Mensagem</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+        </button>
+    </form>
+</div>
             </div>
         </div>
     </section>

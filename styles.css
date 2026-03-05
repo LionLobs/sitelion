@@ -2007,4 +2007,10 @@ input, textarea, select { font-family: inherit; }
   .ai-chatbot-quick-replies {
     grid-template-columns: 1fr;
   }
+} 
+/* Isso vai esconder qualquer camada de carregamento comum */
+#preloader, .preloader, #loader, .loader, .loading-screen {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }

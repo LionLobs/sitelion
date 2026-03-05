@@ -315,14 +315,14 @@ function showToast(message, type = 'info') {
     const span = btn.querySelector('span');
 
     // Obter dados do formulário
-    const nome = form.querySelector('input[type="text"]')?.value || 'Cliente';
-    const whatsapp = form.querySelector('input[type="tel"]')?.value || '';
-    const email = form.querySelector('input[type="email"]')?.value || '';
+    const nome = form.querySelector('input[id="nome"]')?.value || form.querySelector('input[type="text"]')?.value || 'Cliente';
+    const whatsapp = form.querySelector('input[id="whatsapp"]')?.value || form.querySelector('input[type="tel"]')?.value || '';
+    const email = form.querySelector('input[id="email"]')?.value || form.querySelector('input[type="email"]')?.value || '';
     const servico = form.querySelector('select')?.value || 'Serviço não especificado';
     const mensagem = form.querySelector('textarea')?.value || '';
 
-    // Montar mensagem para WhatsApp
-    const textoWhatsApp = `Olá LionLobs! 👋\n\nMeu nome é ${nome}\nWhatsApp: ${whatsapp}\nE-mail: ${email}\n\nServiço de Interesse: ${servico}\n\nMensagem: ${mensagem}\n\nGostaria de conhecer mais sobre seus serviços!`;
+    // Montar mensagem para WhatsApp (com negrito para ficar bonito)
+    const textoWhatsApp = `Olá LionLobs! 👋\n\n*Meu nome:* ${nome}\n*WhatsApp:* ${whatsapp}\n*E-mail:* ${email}\n\n*Serviço de Interesse:* ${servico}\n\n*Mensagem:* ${mensagem}\n\nGostaria de conhecer mais sobre seus serviços!`;
 
     // Codificar para URL
     const mensagemCodificada = encodeURIComponent(textoWhatsApp);
@@ -337,10 +337,14 @@ function showToast(message, type = 'info') {
       btn.disabled = false;
       if (span) span.textContent = 'Enviar Mensagem';
       form.reset();
-      showToast('Abrindo WhatsApp com sua mensagem pronta!', 'success');
+      // Verifique se a função showToast existe no seu projeto, senão use alert
+      if (typeof showToast === "function") {
+        showToast('Abrindo WhatsApp!', 'success');
+      }
     }, 800);
   });
-});
+})(); // <-- Adicionei os "()" aqui para a função rodar sozinha
+
 // ===== NEWSLETTER =====
 (function initNewsletter() {
   const btn = $('.newsletter button');
@@ -350,13 +354,13 @@ function showToast(message, type = 'info') {
   btn.addEventListener('click', () => {
     const email = inp.value.trim();
     if (!email || !email.includes('@')) {
-      showToast('Por favor, insira um e-mail válido.');
+      alert('Por favor, insira um e-mail válido.');
       return;
     }
     inp.value = '';
-    showToast('Inscrição realizada com sucesso! Confira seu e-mail.', 'success');
+    alert('Inscrição realizada com sucesso!');
   });
-});
+})(); // <-- Adicionei os "()" aqui
 
 // ===== PARALLAX HERO BG =====
 (function initParallax() {
